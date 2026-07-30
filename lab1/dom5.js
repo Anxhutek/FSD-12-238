@@ -1,4 +1,4 @@
-import {EventEmitter} from './event-emitter.js';
+import { EventEmitter } from 'events';
 class DomClass extends EventEmitter {
     addEventListener(eventName, callback) {
         this.on(eventName, callback);
