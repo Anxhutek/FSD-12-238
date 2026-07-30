@@ -17,3 +17,19 @@ class DomClass extends EventEmitter {
     }
 
 }
+
+const button = new DomClass();
+const handleClick = (event) => {
+    console.log(`Button clicked at ${event.timespam}`);
+};
+
+button.addEventListener('click', handleClick);
+button.dispatchEvent('click',{
+    target:"submit8n",
+});
+
+
+button.addEventListener('click', handleClick);
+button.dispatchEvent('click',{
+    target:"reset8n",
+});
